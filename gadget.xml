@@ -2,7 +2,7 @@
 <gadget>
   <name>Brightness Control</name>
   <namespace>SetBrightnessGadget</namespace>
-  <version>1.0.0.0</version>
+  <version>1.0.0.1</version>
   <author>Arcy-V</author>
   <description>Control your screen brightness from your desktop using DDC/CI.</description>
   <hosts>
