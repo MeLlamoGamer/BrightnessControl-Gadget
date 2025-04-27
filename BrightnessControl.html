@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Control de Brillo</title>
+  <script type="text/javascript" src="BrightnessControl.js"></script>
+  <style>
+    body {
+      width: 130px;
+      height: 80px; /* Más bajito aún */
+      margin: 0;
+      padding: 0;
+      background: rgba(240, 240, 240, 0.7); /* Fondo translúcido */
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px; /* Opcional: bordes redondeados */
+      backdrop-filter: blur(5px); /* Opcional: efecto de difuminado */
+    }
+
+    h3 {
+      position: absolute;
+      top: 3px;
+      width: 100%;
+      text-align: center;
+      font-size: 16px; /* Más grande */
+      margin: 0;
+    }
+
+    #barContainer {
+      position: absolute;
+      top: 28px;
+      left: 10px;
+      width: 110px; /* Un poco más ancho */
+      height: 10px; /* Más alto */
+      background-color: #ccc;
+      border-radius: 5px;
+    }
+
+    #barFill {
+      height: 100%;
+      width: 50%;
+      background-color: #0078D7;
+      border-radius: 5px;
+      transition: width 0.2s ease;
+    }
+
+    .buttonContainer {
+      position: absolute;
+      top: 50px;
+      width: 100%;
+      text-align: center;
+    }
+
+    button {
+      width: 30px; /* Botones más grandes */
+      height: 25px;
+      margin: 0 5px;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      background-color: #0078D7;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005A9E;
+    }
+  </style>
+</head>
+<body onload="initBrightness()">
+  <h3>Brightness</h3>
+
+  <div id="barContainer">
+    <div id="barFill"></div>
+  </div>
+
+  <div class="buttonContainer">
+    <button onclick="decreaseBrightness()">-</button>
+    <button onclick="increaseBrightness()">+</button>
+  </div>
+</body>
+</html>

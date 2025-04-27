@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<gadget>
+  <name>Brightness Control</name>
+  <namespace>SetBrightnessGadget</namespace>
+  <version>1.0.0.0</version>
+  <author>Arcy-V</author>
+  <description>Control your screen brightness from your desktop using DDC/CI.</description>
+  <hosts>
+    <host name="brightnesscontrol">
+      <base type="HTML" apiVersion="0.2.0" src="BrightnessControl.html"/>
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="0.2"/>
+    </host>
+  </hosts>
+</gadget>
