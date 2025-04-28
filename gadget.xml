@@ -5,6 +5,9 @@
   <version>1.0.0.1</version>
   <author>Arcy-V</author>
   <description>Control your screen brightness from your desktop using DDC/CI.</description>
+  <icons>
+    <icon height="16" width="16" src="LogoBC.png" />
+  </icons>
   <hosts>
     <host name="brightnesscontrol">
       <base type="HTML" apiVersion="0.2.0" src="BrightnessControl.html"/>
